@@ -1,0 +1,12 @@
+*.sqlite*
+*.db
+*.dpapi
+.env*
+!*.example
+node_modules/
+target/
+recordings/
+*.wav
+*.mp3
+*.m4a
+*.gguf
