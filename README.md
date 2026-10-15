@@ -8,9 +8,25 @@ Windows 會議錄音、完整音檔分段轉錄與摘要工具。基於 [Meetily
 - 聯繫信箱：[service@thinkingpower.com.tw](mailto:service@thinkingpower.com.tw)
 - 軟體「關於」頁面亦提供以上連結，目前未加入收款或贊助資訊。
 
-## 下載與第一次使用
+## 0.4.3 原始碼更新（2026-10-15）
 
-目前版本：**0.4.2 本機驗證預覽版**。請到 [Releases](https://github.com/thinkingpowerai-ux/thinkingpower-meeting-assistant/releases) 下載 `thinkingpower-meeting-0.4.2.zip`，完整解壓至可寫入資料夾。
+**目前 Repo 的 modified-source.zip 已更新為 0.4.3；Releases 的 Windows 下載仍是舊的 0.4.2，不含本次修正。0.4.3 整包尚未公開發布。**
+
+- 停止收音後先排空音訊佇列、完成原音保存，再執行完整音檔分段轉錄。
+- 錄音期間不再執行即時 Whisper，避免同一段音訊重複辨識。
+- 保留停止時最後不足一個處理區塊的音訊；保存錯誤明確回報，不自動開始轉錄。
+- FFmpeg 找不到時於開始錄音前提示，不再於錄音流程中隱性下載；優先尋找主程式旁的 ffmpeg.exe。
+- 本機驗收資料夾已預先備妥 FFmpeg，但本 Repo 原始碼包不含 FFmpeg 執行檔。公開整包仍待補齊對應來源及第三方重散布資料。
+
+驗證：前端與 Windows 原生建置通過；260 項測試通過、5 項略過、1 項因無播放裝置未執行。另以預備包的 FFmpeg 通過 4 項保存／合併測試。開發機 15 秒合成音訊保存加解碼檢查約 0.81 秒，**不是 AI 轉錄耗時，也不是筆電效能測試**。
+
+未完成：本次真人麥克風停止與播放驗收、Acer 筆電實測、1 小時比較、雲端實際呼叫、新版截圖 Word 手冊。舊手冊中的即時轉錄及 FFmpeg 準備說明不代表 0.4.3 流程。
+
+正常停止才可確認已完成保存。當機／強制關閉只能嘗試復原已落盤檢查點；未寫入音訊及磁碟錯誤無法保證保全。
+
+## 0.4.2 舊版下載與第一次使用
+
+舊版 Windows 下載：**0.4.2 本機驗證預覽版**。請到 [Releases](https://github.com/thinkingpowerai-ux/thinkingpower-meeting-assistant/releases) 下載 `thinkingpower-meeting-0.4.2.zip`，完整解壓至可寫入資料夾。
 
 1. 閱讀包內「先閱讀.txt」及附實際畫面的 Word 操作手冊。
 2. 使用 Windows x64 與 WebView2 執行階段。執行 `Prepare-FFmpeg.ps1` 從固定上游下載並核對 SHA256；FFmpeg 不隨本包散布。若系統限制腳本，請依「先閱讀.txt」手動準備，不要停用安全防護。
@@ -28,7 +44,7 @@ Windows 會議錄音、完整音檔分段轉錄與摘要工具。基於 [Meetily
 
 設定納入內建 AI、Claude、自訂 OpenAI 相容伺服器、Groq、Ollama、OpenAI、OpenRouter。**列入設定不代表所有服務都能接收音訊，也不代表已通過真實 API 驗收。**語音選單依支援能力與端點驗證限制，Claude / Ollama 為文字摘要用途。
 
-## 驗證與限制
+## 0.4.2 歷史驗證與限制
 
 - 已通過 258 項程式測試（5 項略過），前端建置，以及模擬服務錯誤／跨服務流程。
 - 31.10 秒合成中文音檔：Small CPU 轉錄約 30.82 秒；另一次本機摘要測試約 62.91 秒。這些不是一小時效能或完整流程合計時間。

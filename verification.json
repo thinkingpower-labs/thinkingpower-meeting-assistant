@@ -1,27 +1,19 @@
 {
-  "version": "0.4.2",
-  "based_on": "Meetily community edition; unofficial modification",
-  "installed_binary_sha256": "e5858df01e086d70c982d5361f2b0214d9258a460b2af97edde0ee2ae120c37a",
-  "local_test": "31.095875-second synthetic Mandarin audio; Small CPU transcript + Qwen3.5 2B automatic summary",
-  "unit_tests": {
-    "passed": 258,
-    "failed": 0,
-    "ignored": 5
+  "source_version": "0.4.3",
+  "public_windows_release": "0.4.2",
+  "public_043_binary": false,
+  "source_sha256": "6cf4b6b1d6d8fe1dd2491f7774e063494d8e93b394b2ffe49ac0dbb40f4dcc25",
+  "tests": {
+    "passed": 260,
+    "ignored": 5,
+    "hardware_skipped": 1,
+    "bundled_ffmpeg_tests_passed": 4
   },
-  "raw_preservation": "source and retained audio SHA256 equal",
-  "data_backup": "application-created Windows DPAPI snapshot, read-back integrity ok",
-  "cloud_services": "not actually called; no paid tests authorized",
-  "long_audio_comparison": "not performed",
-  "microphone": "not detected during this acceptance",
-  "gpu": "not implemented; phase two",
-  "actual_cloud_cost_usd": null,
-  "timing_reference": {
-    "local_stt_seconds": 30.8220135,
-    "independent_summary_smoke_seconds": 62.906,
-    "not_one_hour_benchmark": true
-  },
-  "quality": "recognition errors and inferred summary details observed; human audio review required",
-  "distribution": "FFmpeg and large STT/summary model weights excluded; each user configures own keys",
-  "final_user_acceptance": "Final installed screenshot shows two transcript segments, summary, Chinese toolbar; user confirmed audible playback.",
-  "manual": "12-page DOCX; all final rendered pages visually inspected"
+  "limitations": [
+    "Real microphone stop and playback not validated",
+    "Acer laptop not benchmarked",
+    "Cloud providers not live tested",
+    "FFmpeg corresponding source redistribution review pending",
+    "Updated screenshot Word guide pending"
+  ]
 }
