@@ -10,13 +10,17 @@ Windows 會議錄音、完整音檔分段轉錄與摘要工具。基於 [Meetily
 
 ## 0.4.3 原始碼更新（2026-10-15）
 
-**目前 Repo 的 modified-source.zip 已更新為 0.4.3；Releases 的 Windows 下載仍是舊的 0.4.2，不含本次修正。0.4.3 整包尚未公開發布。**
+**[下載 0.4.3 完整包（含 FFmpeg）](https://github.com/thinkingpowerai-ux/thinkingpower-meeting-assistant/releases/download/v0.4.3/thinkingpower-meeting-0.4.3.zip)**
+
+先關閉舊版，完整解壓至新資料夾，執行 `meetily.exe`。`ffmpeg.exe` 已放在主程式旁，不必執行準備腳本。需要 Windows x64 與 WebView2；AI 模型另於程式中下載，雲端 Key 由每位使用者自行設定。測試範圍及限制見下方。
+
+[版本說明與 SHA256](https://github.com/thinkingpowerai-ux/thinkingpower-meeting-assistant/releases/tag/v0.4.3)。Repo 的 `modified-source.zip` 為同版本修改原始碼。
 
 - 停止收音後先排空音訊佇列、完成原音保存，再執行完整音檔分段轉錄。
 - 錄音期間不再執行即時 Whisper，避免同一段音訊重複辨識。
 - 保留停止時最後不足一個處理區塊的音訊；保存錯誤明確回報，不自動開始轉錄。
 - FFmpeg 找不到時於開始錄音前提示，不再於錄音流程中隱性下載；優先尋找主程式旁的 ffmpeg.exe。
-- 本機驗收資料夾已預先備妥 FFmpeg，但本 Repo 原始碼包不含 FFmpeg 執行檔。公開整包仍待補齊對應來源及第三方重散布資料。
+- 整包附 FFmpeg 執行檔、GPLv3 授權、上游 README 及 FFmpeg 8.0.1 來源碼；第三方連結函式庫來源資料完整性仍待獨立核對，不宣稱整包全為 MIT。
 
 驗證：前端與 Windows 原生建置通過；260 項測試通過、5 項略過、1 項因無播放裝置未執行。另以預備包的 FFmpeg 通過 4 項保存／合併測試。開發機 15 秒合成音訊保存加解碼檢查約 0.81 秒，**不是 AI 轉錄耗時，也不是筆電效能測試**。
 
