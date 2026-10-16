@@ -2,9 +2,13 @@
 
 將實體會議、線上會議與既有錄音，整理成可播放對照的逐字稿與會議紀要。
 
-**1.0.0｜首次正式發行｜Windows x64**
+**1.0.1｜錄音保存與復原更新｜Windows x64**
 
-[下載 Windows 完整包](https://github.com/thinkingpowerai-ux/thinkingpower-meeting-assistant/releases/download/v1.0.0/thinkingpower-meeting-1.0.0.zip) · [操作說明](操作說明.md) · [MIT 授權](LICENSE.md)
+[下載 Windows 完整包](https://github.com/thinkingpowerai-ux/thinkingpower-meeting-assistant/releases/download/v1.0.1/thinkingpower-meeting-1.0.1.zip) · [操作說明](操作說明.md) · [MIT 授權](LICENSE.md)
+
+## 本版更新
+
+停止錄音後以暫存音檔合併、完整解碼驗證，再提交成品；保留原始分段，不覆寫既有原音。首頁提供未完成錄音檢查與復原，設定中可開啟本機診斷資料夾。
 
 ## 核心流程
 

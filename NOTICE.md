@@ -8,7 +8,7 @@ Original and modified project code is provided under the complete MIT License in
 
 Third-party components retain their own licenses. MIT does not relicense dependencies, assets, model weights or FFmpeg. See licenses/ and dependency-license-inventory.json. The inventory includes development and other-platform dependencies as well as distributed components.
 
-The Windows package includes FFmpeg 8.0.1 Gyan essentials under GPLv3. Its original license, upstream README, build configuration and FFmpeg 8.0.1 source archive are included. See FFmpeg-SOURCE.txt for the upstream source and build references. Linked-library corresponding-source completeness has not been independently verified.
+The Windows package includes FFmpeg 8.1.2 Gyan essentials under GPLv3. Its original license, upstream README, build configuration and FFmpeg 8.1.2 source archive are included. See FFmpeg-SOURCE.txt for the upstream source and build references. Linked-library corresponding-source completeness has not been independently verified.
 
 MPL-dependency-sources.zip and additional-upstream-sources.zip retain third-party source distributions. Inter font uses SIL OFL; embedded Silero VAD retains its MIT notice. Qwen and Gemma weights are separate downloads under their respective terms and are not bundled or collectively relicensed as MIT.
 
