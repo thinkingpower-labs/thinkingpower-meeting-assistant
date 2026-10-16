@@ -1,0 +1,2 @@
+e539873e5a0cdd2e43c0805357ea3018d729ce767190904a22c349bf2d26e5da  thinkingpower-meeting-1.0.0.zip
+9695cbe647a6e6ca2bf6d3340f187717c98bac9555a87fe4868ec5a1e1de8fcd  modified-source.zip
