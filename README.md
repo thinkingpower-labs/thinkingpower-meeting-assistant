@@ -2,11 +2,15 @@
 
 將實體會議、線上會議與既有錄音，整理成可播放對照的逐字稿與會議紀要。
 
-**1.0.1｜錄音保存與復原更新｜Windows x64**
+**1.0.2｜品牌圖示更新｜Windows x64**
 
-[下載 Windows 完整包](https://github.com/thinkingpowerai-ux/thinkingpower-meeting-assistant/releases/download/v1.0.1/thinkingpower-meeting-1.0.1.zip) · [操作說明](操作說明.md) · [MIT 授權](LICENSE.md)
+<img src="thinkingpower-meeting-bird.png" alt="思惟力量會議助手機器鳥" width="128" />
+
+[下載 Windows 完整包](https://github.com/thinkingpowerai-ux/thinkingpower-meeting-assistant/releases/download/v1.0.2/thinkingpower-meeting-1.0.2.zip) · [操作說明](操作說明.md) · [MIT 授權](LICENSE.md)
 
 ## 本版更新
+
+採用思惟力量 AI 工具系列的紫色機器鳥，主程式更名為 `ThinkingPowerMeeting.exe`；保留既有會議與設定的資料位置。
 
 停止錄音後以暫存音檔合併、完整解碼驗證，再提交成品；保留原始分段，不覆寫既有原音。首頁提供未完成錄音檢查與復原，設定中可開啟本機診斷資料夾。
 
@@ -52,7 +56,7 @@
 
 ## 第一次使用
 
-1. 下載完整 ZIP，完整解壓至可寫入資料夾，執行 `meetily.exe`。需要 Windows x64 與 WebView2 執行階段。
+1. 下載完整 ZIP，完整解壓至可寫入資料夾，執行 `ThinkingPowerMeeting.exe`。需要 Windows x64 與 WebView2 執行階段。
 2. 在「設定」分別選擇語音轉錄及摘要服務、模型，儲存連線。使用本機 AI 時下載所需模型；雲端服務使用自己的 API Key。
 3. 選實體／線上會議並確認收音裝置，或按「匯入音檔」。
 4. 停止錄音後等待原音保存及轉錄；選擇摘要範本、語言，按「產生摘要」，或啟用自動摘要。

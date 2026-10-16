@@ -16,3 +16,5 @@ No personal recordings, transcripts, databases, credentials or model weights are
 
 ThinkingPower: http://www.thinkingpower.com.tw
 Contact: service@thinkingpower.com.tw
+
+ThinkingPower robot-bird artwork was generated for this project and is distributed under MIT with the modifications. It is not the Meetily logo.
