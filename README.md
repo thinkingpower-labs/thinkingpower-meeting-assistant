@@ -2,18 +2,22 @@
 
 將實體會議、線上會議與既有錄音，整理成可播放對照的逐字稿與會議紀要。
 
-**1.2｜Google Gemini・說話人辨識・本機摘要準備｜Windows x64**
+**1.2.1｜Google Gemini・說話人辨識・本機摘要準備｜Windows x64**
 
 <img src="thinkingpower-meeting-bird.png" alt="思惟力量會議助手機器鳥" width="128" />
 
-[下載 Windows 完整包](https://github.com/thinkingpowerai-ux/thinkingpower-meeting-assistant/releases/download/v1.2.0/thinkingpower-meeting-1.2.0.zip) · [Word 使用手冊](思惟力量會議助手操作手冊_1.2.0.docx) · [操作說明](操作說明.md) · [MIT 授權](LICENSE.md)
+[下載 Windows 完整包](https://github.com/thinkingpowerai-ux/thinkingpower-meeting-assistant/releases/download/v1.2.1/thinkingpower-meeting-1.2.1.zip) · [Word 使用手冊](思惟力量會議助手操作手冊_1.2.1.docx) · [操作說明](操作說明.md) · [MIT 授權](LICENSE.md)
+
+[公開介紹與下載頁](https://thinkingpower-meeting.thinkingpower.chatgpt.site)
 
 ## 本版更新
+
+- **原始檔名與資料夾**：會議逐字稿上方顯示實際原音檔名與 Music 錄音資料夾，可複製完整路徑。修改會議標題後仍可對照。
 
 - **Google Gemini API**：新增 Google AI Studio Key 設定、模型清單、一般分段轉錄、說話人分離與會議摘要，同一服務共用加密儲存的 Key。
 - **說話人與姓名**：依聲音分組，逐字稿顯示說話人，可手動修改姓名；複製、匯出與新摘要帶入姓名。
 - **本機摘要準備**：首次設定一起下載 Whisper Small 與 Qwen 3.5 4B，實際載入檢查後才完成；設定頁與會議摘要設定可下載模型、查看進度、取消與重試。
-- **使用手冊恢復**：完整包附 16 頁 Word 操作手冊，保留 12 張原有截圖，補上本機設定、錄音中心、姓名修改與 Gemini 說明。
+- **使用手冊恢復**：完整包附 17 頁 Word 操作手冊，保留 12 張原有截圖，補上本機設定、錄音中心、姓名修改與 Gemini 說明。
 - **錄音與轉錄中心**：沿用集中聆聽、搜尋、工作進度、各筆取消／接續及雲端 3 筆、本機 1 筆的處理流程。
 
 Google 說話人模式限 30 分鐘、最多 8 位，3 人以上仍屬實驗性。OpenAI 相容說話人模型公告於 2027/02/26 停用。姓名與時間資訊仍須對照原音確認，詳見[操作說明](操作說明.md)。
