@@ -2,17 +2,21 @@
 
 將實體會議、線上會議與既有錄音，整理成可播放對照的逐字稿與會議紀要。
 
-**1.0.2｜品牌圖示更新｜Windows x64**
+**1.1｜錄音與轉錄中心｜Windows x64**
 
 <img src="thinkingpower-meeting-bird.png" alt="思惟力量會議助手機器鳥" width="128" />
 
-[下載 Windows 完整包](https://github.com/thinkingpowerai-ux/thinkingpower-meeting-assistant/releases/download/v1.0.2/thinkingpower-meeting-1.0.2.zip) · [操作說明](操作說明.md) · [MIT 授權](LICENSE.md)
+[下載 Windows 完整包](https://github.com/thinkingpowerai-ux/thinkingpower-meeting-assistant/releases/download/v1.1.0/thinkingpower-meeting-1.1.0.zip) · [操作說明](操作說明.md) · [MIT 授權](LICENSE.md)
 
 ## 本版更新
 
-採用思惟力量 AI 工具系列的紫色機器鳥，主程式更名為 `ThinkingPowerMeeting.exe`；保留既有會議與設定的資料位置。
+- **集中管理**：錄音與轉錄中心整合會議、未完成錄音、原音聆聽、搜尋及狀態篩選。
+- **多筆工作**：雲端最多同時 3 筆、本機 1 筆，其餘排隊。各筆進度、取消訊號與完成事件獨立。
+- **長錄音與重試**：磁碟暫存分段讀取；同會議接續或改用 OpenAI 等服務重做，保留舊工作、舊稿及原音。
+- **背景處理**：對話框可關閉，仍可在中心追蹤。取消會保留當前分段回應後停止下一段。
+- **精簡文件**：一份使用說明取代舊手冊與測試文件，必要授權及對應來源保留。
 
-停止錄音後以暫存音檔合併、完整解碼驗證，再提交成品；保留原始分段，不覆寫既有原音。首頁提供未完成錄音檢查與復原，設定中可開啟本機診斷資料夾。
+首次升級建議執行包內「啟動_先備份.ps1」。排隊狀態不跨程式重開保存；已建立會議的分段進度可接續。詳見[操作說明](操作說明.md)與[發行紀錄](CHANGELOG.md)。
 
 ## 核心流程
 
