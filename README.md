@@ -87,8 +87,15 @@ Google 說話人模式限 30 分鐘、最多 8 位，3 人以上仍屬實驗性�
 
 [公司網站](http://www.thinkingpower.com.tw) · [service@thinkingpower.com.tw](mailto:service@thinkingpower.com.tw)
 
-<p>
-  <img src="payment-qr.png" alt="自願支持思惟力量，請我們喝杯咖啡" width="112" />
-  &nbsp;
-  <img src="line-qr.png" alt="思惟力量 LINE" width="112" />
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <img src="payment-qr.png" alt="請我們喝杯咖啡" width="112" /><br />
+      <sub>☕ 請我們喝杯咖啡</sub>
+    </td>
+    <td align="center">
+      <img src="line-qr.png" alt="加入思惟力量 LINE" width="112" /><br />
+      <sub>加入思惟力量 LINE</sub>
+    </td>
+  </tr>
+</table>
