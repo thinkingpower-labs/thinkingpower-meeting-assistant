@@ -3,7 +3,7 @@
   <h1>思惟力量會議助手</h1>
   <p>把會議錄音，整理成找得到、看得懂、能追蹤的紀錄。</p>
   <p>Windows x64 · 本機與雲端 AI · MIT 社群改造版</p>
-  <p><a href="https://github.com/thinkingpower-labs/thinkingpower-meeting-assistant/releases/download/v1.2.1/thinkingpower-meeting-1.2.1.zip"><strong>下載 Windows 完整包</strong></a> · <a href="思惟力量會議助手操作手冊_1.2.1.docx">Word 使用手冊</a> · <a href="操作說明.md">操作說明</a></p>
+  <p><a href="https://github.com/thinkingpower-labs/thinkingpower-meeting-assistant/releases/download/v1.2.2/thinkingpower-meeting-1.2.2.zip"><strong>下載 Windows 完整包</strong></a> · <a href="思惟力量會議助手操作手冊_1.2.1.docx">Word 使用手冊</a> · <a href="操作說明.md">操作說明</a></p>
 </div>
 
 ---
@@ -14,10 +14,12 @@
 | --- | --- | --- |
 | 停止錄音後先存檔，再進行完整轉錄 | 本機或雲端，轉錄與摘要分開選擇 | 五種範本、播放對照、逐字稿與 Markdown 匯出 |
 
-**目前版本 1.2.1** — Google Gemini、說話人辨識與本機摘要準備。  
+**目前版本 1.2.2** — OpenAI 分段轉錄與少字提醒。<br>
 [第一次使用](#第一次使用) · [五種摘要範本](#五種摘要範本) · [與原社區版的差異](#相較原-meetily-社區版的改造重點) · [原始碼與授權](#原始碼與授權)
 
 ## 本版更新
+
+- OpenAI GPT-4o 系列每段使用固定提示。多個較長片段只辨識到少量文字時，會議頁會提醒播放原音核對。
 
 - **原始檔名與資料夾**：會議逐字稿上方顯示實際原音檔名與 Music 錄音資料夾，可複製完整路徑。修改會議標題後仍可對照。
 
