@@ -1,3 +1,3 @@
-d6c99d6afbd7ec84fe2564b9df22f41b8a744609b90c4825f683e3b83f16ac15  thinkingpower-meeting-1.2.3.zip
+0022f03788be40e87eecb4726cb2c8055009e8600f7034ad71c2c515f754df9b  thinkingpower-meeting-1.2.4.zip
 83a3d012b23cb71fe59c581a2bd28cb6b3b6e48b3f1f21d5649a68bced381140  思惟力量會議助手操作手冊_1.2.1.docx
-b25ce2a5b6c56f3eaf7f5fc695794d6c71ecb259d755f888a109d16d5d177bc4  modified-source.zip
+acdf88178cda694c3fb3ce376ee3461365ee1ee17fd96e0043e6f2c2daa24f07  modified-source.zip

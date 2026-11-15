@@ -3,7 +3,7 @@
   <h1>思惟力量會議助手</h1>
   <p>把會議錄音，整理成找得到、看得懂、能追蹤的紀錄。</p>
   <p>Windows x64 · 本機與雲端 AI · MIT 社群改造版</p>
-  <p><a href="https://github.com/thinkingpower-labs/thinkingpower-meeting-assistant/releases/download/v1.2.3/thinkingpower-meeting-1.2.3.zip"><strong>下載 Windows 完整包</strong></a> · <a href="思惟力量會議助手操作手冊_1.2.1.docx">Word 使用手冊</a> · <a href="操作說明.md">操作說明</a></p>
+  <p><a href="https://github.com/thinkingpower-labs/thinkingpower-meeting-assistant/releases/download/v1.2.4/thinkingpower-meeting-1.2.4.zip"><strong>下載 Windows 完整包</strong></a> · <a href="思惟力量會議助手操作手冊_1.2.1.docx">Word 使用手冊</a> · <a href="操作說明.md">操作說明</a></p>
 </div>
 
 ---
@@ -14,10 +14,14 @@
 | --- | --- | --- |
 | 停止錄音後先存檔，再進行完整轉錄 | 本機或雲端，轉錄與摘要分開選擇 | 五種範本、播放對照、逐字稿與 Markdown 匯出 |
 
-**目前版本 1.2.3** — 匯入進度與逐字稿導覽。<br>
+**目前版本 1.2.4** — Windows 線上會議收音補強。<br>
 [第一次使用](#第一次使用) · [五種摘要範本](#五種摘要範本) · [與原社區版的差異](#相較原-meetily-社區版的改造重點) · [原始碼與授權](#原始碼與授權)
 
 ## 本版更新
+
+- Windows 線上會議可選擇會議軟體使用的播放裝置。
+- 錄前可試收 5 秒並分開查看麥克風與電腦播放訊號；試收不存檔、不上傳。錄音中顯示兩路近 3 秒的狀態。
+- 若開錄時無法開啟選定的電腦播放裝置，會提示檢查裝置，避免只錄到麥克風。
 
 - 匯入視窗持續更新轉錄進度及已保存段數。逐字稿儲存後，會自動開啟該筆會議。
 
